@@ -1,0 +1,56 @@
+@font-face {
+  font-family: Quadra; /* Имя шрифта */
+  src: url(assets/fonts/quadra.ttf); /* Путь к файлу со шрифтом */
+
+}
+
+@main-color:black;
+
+body{
+  background: lighten(@main-color,	10%);
+  font-family: "trebuchet ms", sans-serif;
+
+  color:white;
+}
+.welcoming-label{
+  padding: 10px;
+  font-size: 25px;
+}
+#welcome{
+  font-family: "Quadra";
+  font-size: 60px;
+}
+h2{
+  margin: 0;
+  color: #666;
+  padding-top: 90px;
+  font-size: 52px;
+  font-family: "trebuchet ms", sans-serif;
+}
+.item{
+  background: lighten(@main-color,	20%);
+  text-align: center;
+  height: 300px !important;
+}
+.carousel{
+  margin-top: 20px;
+}
+.navbar-inverse{
+  border-radius: 0;
+}
+.photo-grid{
+  margin-top: 100px;
+}
+.thumbnail{
+  background-color: @main-color;
+  border-radius: 0;
+  border:hidden;
+}
+.caption h3{
+
+  color: lighten(@main-color,	80%);
+}
+.item img{
+  object-fit: cover;
+  object-position: center;
+}
