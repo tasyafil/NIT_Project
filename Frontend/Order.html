@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Make an order</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- LESS основний файл -->
+    <link rel="stylesheet/less" type="text/css" href="main.less" />
+    <!-- LESS JavaScript компілятор -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <!-- Контейнер (определяет ширину Navbar) -->
+    <div class="container-fluid">
+        <!-- Заголовок -->
+        <div class="navbar-header">
+            <!-- Кнопка «Гамбургер» отображается только в мобильном виде (предназначена для открытия основного содержимого Navbar) -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="icon-bar">
+                <span class="icon-bar "></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- Бренд или название сайта (отображается в левой части меню) -->
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+        <!-- Основная часть меню (может содержать ссылки, формы и другие элементы) -->
+        <div class="collapse navbar-collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+                <li><a href="main_page.html">Main</a></li>
+                <li><a href="#">Comments</a></li>
+                <li class="active"><a href="#">Make an order</a></li>
+                <li ><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <!---------------------------------------CSS------------------------------------------->
+        <style>
+            form{
+                margin: 2% 10%;}
+            ul { }
+            ul li {
+                display:block;
+            }
+            ul li label {
+                display:block;
+                margin:0;
+                padding:16px 0 0 0;
+            }
+            ul li input  {
+                border:1px solid #c0c0c0;
+                margin:0;
+                background-color:#fff;
+                font-weight:bold;
+                color:black;
+                border-radius:5px;
+            }
+            ul li textarea {
+                width:480px;
+                border:1px solid #c0c0c0;
+                margin:0;
+                padding:2px;
+                background-color:#fff;
+                color:black;
+                border-radius:5px;
+            }
+            ul li .send {
+                margin:16px 0 0 0;
+            }
+            img {
+                width:100px;
+                height:100px;
+                float:right;
+                margin-right:51%;
+            }
+            .BTN {
+                background-color: #a8b2b3;
+                color: white;
+                width:180px;
+                height:30px;
+                font-size: 16px;
+                border-radius:5px;
+                cursor: pointer;
+                margin-top:30px;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #e7e7e7;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .dropdown-content a:hover {background-color: #f1f1f1}
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+        </style>
+    <!---------------------------------------CSS------------------------------------------->
+        <form action="#" method="post" id="sendemail">
+            <img class="orderpic" src="images/order.jpg" alt ="Icon">
+            <h3><span>Here you can make an order</span></h3>
+            <ul>
+                <li>
+                    <label for="Fname">Name (required)</label>
+                    <input id="Fname" name="name" class="text" />
+                </li>
+                <li>
+                    <label for="email">Email Address (required)</label>
+                    <input id="email" name="email" class="text" />
+                </li>
+                <li>
+                    <label for="website">Website</label>
+                    <input id="website" name="website" class="text" />
+                </li>
+                <li>
+
+                    <div class="dropdown">
+                        <button class="BTN">Choose concept</button>
+                        <div class="dropdown-content">
+                            <a>concept1</a>
+                            <a>concept2</a>
+                            <a>concept3</a>
+                            <a>concept4</a>
+                            <a>concept5</a>
+                            <a>else</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="8" cols="50"></textarea>
+                </li>
+                <li>
+                    <button class="BTN">Send</button>
+                </li>
+            </ul>
+        </form>
+    <!--------------------------------------------------------JS---------------------------->
+
+
+    <!--------------------------------------------------------JS---------------------------->
+
+</div>
+</body>
+</html>
